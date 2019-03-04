@@ -7,7 +7,11 @@ def show(remote, command):
 
     stdin, stdout, stderr=remote.exec_command(command)
     result = stdout.read()
-    print(result[269:]+"\n") #print the output sans banner
+    i=240
+    while result[i]!="U" and result[i]!="N":
+       i+=1
+    print(result[i:]+"\n") #print the output sans banner
+
 
 
 
