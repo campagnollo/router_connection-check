@@ -20,6 +20,7 @@ def show(remote, command, EPA):
     #print(result)
 
 def main(router):
+	""" Acknowledge that this is poor coding practice. This is Python 2.7 code and is no longer in use. Future coding of such info now utilize a seperate .env file. """
     ATTuser="*****"
     ATTpassword="*****"
     TACACSuser="****"
